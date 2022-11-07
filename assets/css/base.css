@@ -1,0 +1,63 @@
+:root {
+    --text-color: #505050;
+    --black-color: #212121;
+    --white-color: #fff;
+    --blue-color: #3fd0d4;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 2.4rem;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Catamaran', sans-serif;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Animation */
+@keyframes GrowDown {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Growth {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: var(--percent);
+    }
+}
+
+/* placeholder */
+::placeholder {
+    color: var(--white-color);
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--white-color);
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--white-color);
+}
